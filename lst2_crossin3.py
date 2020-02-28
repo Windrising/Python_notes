@@ -39,8 +39,9 @@ while True:
 data={}
 data['player']=name
 data['total_times']=n
+data['total_cycle']=n2
 data['min_times']=n1
-data_output=str('玩家名称:'+data['player']+'；总游戏轮数：'+str(data['total_times'])+'；最快游戏轮数：'+str(data['min_times']))
+data_output=str('玩家名称:'+data['player']+'；总游戏次数：'+str(data['total_times'])+';总游戏轮数：'+str(data['total_cycle'])+'；最快游戏轮数：'+str(data['min_times']))
 game_record=open(r'd:/game_one_user.txt','w')
 game_record.write(data_output)
 game_record.close()
